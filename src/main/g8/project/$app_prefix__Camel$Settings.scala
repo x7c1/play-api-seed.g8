@@ -1,15 +1,18 @@
 import sbt._
 import Keys._
+import sbt.Def.SettingList
 
 object $app_prefix;format="Camel"$Settings {
-  val common = Seq(
-    scalaVersion := "2.11.7",
+  lazy val commons = new SettingList(Seq(
+    scalaVersion := "2.12.4",
     scalacOptions ++= Seq(
       "-deprecation",
-      "-feature"
+      "-feature",
+      "-unchecked",
+      "-Xfuture",
     ),
     libraryDependencies ++= Seq(
-      "org.scalatest" % "scalatest_2.11" % "2.2.4" % Test
-    )
-  )
+      "org.scalatest" %% "scalatest" % "3.0.4" % Test,
+    ),
+  ))
 }
