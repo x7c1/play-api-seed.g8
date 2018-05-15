@@ -4,7 +4,7 @@ import sbt.Def.SettingList
 
 object $app_prefix;format="Camel"$Settings {
   lazy val commons = new SettingList(Seq(
-    scalaVersion := "2.12.5",
+    scalaVersion := "2.12.6",
     scalacOptions ++= Seq(
       "-deprecation",
       "-feature",
