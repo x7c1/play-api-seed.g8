@@ -12,6 +12,7 @@ object $app_prefix;format="Camel"$Settings {
       "-unchecked",
       "-Xfuture",
     ),
+    organization := "$organization$",
     libraryDependencies ++= Seq(
       // https://mvnrepository.com/artifact/org.scalatest/scalatest
       "org.scalatest" %% "scalatest" % "3.0.5" % Test,
