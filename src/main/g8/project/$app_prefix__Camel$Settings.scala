@@ -12,7 +12,7 @@ object $app_prefix;format="Camel"$Settings {
       "-Xfuture",
     ),
     libraryDependencies ++= Seq(
-      "org.scalatest" %% "scalatest" % "3.0.4" % Test,
+      "org.scalatest" %% "scalatest" % "3.1.2" % Test,
     ),
   ))
 }
