@@ -13,8 +13,8 @@ object $app_prefix;format="Camel"$Settings {
       "-Xfuture",
     ),
     libraryDependencies ++= Seq(
-      // https://mvnrepository.com/artifact/org.scalatestplus.play/scalatestplus-play
-      "org.scalatest" %% "scalatest" % "3.1.2" % Test,
+      // https://mvnrepository.com/artifact/org.scalatest/scalatest
+      "org.scalatest" %% "scalatest" % "3.0.5" % Test,
     ),
   ))
 }
