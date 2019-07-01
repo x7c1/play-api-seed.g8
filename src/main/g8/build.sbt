@@ -3,7 +3,7 @@ lazy val `$app_prefix$-play` = project.
   settings($app_prefix;format="Camel"$Settings.commons).
   settings(libraryDependencies ++= Seq(
     guice,
-    "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test,
+    "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.3" % Test,
   )).
   enablePlugins(PlayScala).
   dependsOn(`$app_prefix$-domain`)
