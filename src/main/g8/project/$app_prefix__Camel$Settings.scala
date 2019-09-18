@@ -5,7 +5,7 @@ import sbt.Def.SettingList
 object $app_prefix;format="Camel"$Settings {
   lazy val commons = new SettingList(Seq(
     // https://mvnrepository.com/artifact/org.scala-lang/scala-library
-    scalaVersion := "2.12.6",
+    scalaVersion := "2.13.1",
     scalacOptions ++= Seq(
       "-deprecation",
       "-feature",
@@ -15,7 +15,7 @@ object $app_prefix;format="Camel"$Settings {
     organization := "$organization$",
     libraryDependencies ++= Seq(
       // https://mvnrepository.com/artifact/org.scalatest/scalatest
-      "org.scalatest" %% "scalatest" % "3.0.5" % Test,
+      "org.scalatest" %% "scalatest" % "3.0.8" % Test,
     ),
   ))
 }
